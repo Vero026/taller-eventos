@@ -9,16 +9,19 @@
 </head>
 <body>
 
-<div id="div" style="background-color: green 5px;" >
-    <button onclick="mostrarSaludo()">Saludar!</button>
-    
-</div>
- 
-    <script>
-         function mostrarSaludo(){
-            alert("Hola!");
-             } 
-    </script> 
+    <div id="div" style="background-color: green; padding: 5px;" >
+        <button onclick= "mostrarSaludo()">Saludar!</button>
+        
+    </div>
+     
+        <script>
+             function mostrarSaludo(){
+                alert("Hola!");
+                event.stopPropagation();
+                 } 
+           
+                
+        </script> 
      
 </body>
 </html> 
